@@ -28,12 +28,12 @@ function autoChat(){
   let name = ""
   rl.question('\n>>>您的名字是？', (answer) => {
     name = answer
-    color.colorLog('请提问!\n')
+    color.colorLog(`你好，${name}`)
     chat()
   })
 
   function chat(){
-    rl.question('>>>请输入问题\n ', (question) => {
+    rl.question('\n>>>请输入问题\n ', (question) => {
       if (!question){
         color.colorLog('期待下次的聊天!')
         process.exit(0)      //退出
@@ -70,7 +70,7 @@ function autoChat(){
         case RESPONSE_TYPE.TEXT:
             return res.text;
         case RESPONSE_TYPE.LINK:
-            return `${res.text} : ${res.url}`;
+            return `${res.text} : ${res.url}\n`;
         case RESPONSE_TYPE.NEWS:
             let listInfo = '';
             (res.list || []).forEach((it) => {

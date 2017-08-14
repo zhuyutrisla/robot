@@ -14,6 +14,13 @@ npm install zhuyutrisla-robot -g
 
 ```
 
+#### 更新指令
+
+```
+
+npm update zhuyutrisla-robot -g                                                                 
+```
+
 ### 使用
 
 ```
