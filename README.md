@@ -8,8 +8,7 @@
 
 
 ### 安装 
-```        
-
+```
 npm install zhuyutrisla-robot -g                                                        
 
 ```
@@ -17,7 +16,6 @@ npm install zhuyutrisla-robot -g
 #### 更新指令
 
 ```
-
 npm update zhuyutrisla-robot -g                                                                 
 ```
 
